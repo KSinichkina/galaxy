@@ -1,0 +1,17 @@
+{
+  "name": "galaxy",
+  "version": "1.0.0",
+  "description": "galaxy task EPAM",
+  "author": "Kateryna Sinichkina",
+  "license": "no",
+  "dependencies": {
+    "mustache-loader": "^0.4.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "deep-merge": "^1.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
