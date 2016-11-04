@@ -1,2 +1,0 @@
-# galaxy
-zeplin task

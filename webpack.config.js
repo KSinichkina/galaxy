@@ -1,28 +1,33 @@
-var webpack = require('webpack');
+"use strict";
+
+var path = require("path");
 
 module.exports = {
-  context: __dirname + 'src/',
-  entry: __dirname + 'src/' + 'app.js',
+  entry: [
+    "./node_modules/reflect-metadata/Reflect",
+    "./node_modules/zone.js/dist/zone",
+    "./app/boot.ts"
+  ],
   output: {
-    path: __dirname + '/dist',
-	filename: '[name].js'
-
-  },
-  module: {
-    loaders: [
-      { test: /\.css$/, loader: 'style!css'},
-	  { test: /\.css$/, loader: "style-loader!css-loader?root=." },
-	  { test: /png|jpg|svg|ttf|eot|woff|woff2\.()$/, loader: 'file?name=[path][name].[ext]' },
-      { test: /\.png$/, loader: "url-loader?limit=100000" },
-      { test: /\.jpg$/, loader: "file-loader" },
-	  {	test: /\.html$/, loader: 'mustache'
-        // loader: 'mustache?minify'
-        // loader: 'mustache?{ minify: { removeComments: false } }'
-        // loader: 'mustache?noShortcut'
-   	  }
-    ]
+    publicPath: '/public/',
+    path: path.join(__dirname, '/public'),
+    filename: "bundle.js"
   },
   resolve: {
-    modulesDirectories: ['node_modules', 'bower_components', 'web_modules']
+    extensions: ["", ".js", ".ts"]
+  },
+  devtool: 'source-map',
+  module: {
+    loaders: [
+      {
+        test: /\.ts/,
+        loaders: ["ts-loader"],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style?sourceMap", "css?sourceMap", "sass?sourceMap"]
+      }
+    ]
   }
-};
+}

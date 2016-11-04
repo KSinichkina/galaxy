@@ -1,0 +1,16 @@
+@import "vars";
+
+.footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  span {
+    text-align: center;
+    font: 14px/4em 'Verdana';
+    color: #fff;
+    display: inherit;
+  }
+}
