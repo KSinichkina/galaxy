@@ -1,12 +1,10 @@
 import { Component } from "@angular/core";
-// import { ROUTER_DIRECTIVES } from '@angular/router';
 import { Store } from "@ngrx/store";
+import { style } from "../../../styles/header.scss";
 
 @Component({
   selector: "ctHeader",
   // directives: [
-  //   ROUTER_DIRECTIVES,
-  //   AuthComponent
   // ],
   template: `
               <header>
@@ -18,21 +16,8 @@ import { Store } from "@ngrx/store";
                 </nav>
               </header>
             `,
-  styles: [
-    `
-      .nav-menu {
-        a {
-          text-transform: uppercase;
-        }
-      }
-    `
-  ]
+  styleUrls: style
 })
 export default class HeaderComponent {
-
-  constructor(
-    private _store: Store<any>
-  ) {
-  }
 
 }
