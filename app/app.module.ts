@@ -15,6 +15,7 @@ import HeaderComponent from "./components/shared/header/HeaderComponent";
 import FooterComponent from "./components/shared/footer/FooterComponent";
 
 import { root } from "./reducers/RootReducer";
+import DestinationComponent from "./components/DestinationComponent";
 
 
 
@@ -22,7 +23,7 @@ import { root } from "./reducers/RootReducer";
     declarations: [
       // components
       AppComponent,
-      HomeComponent,
+      DestinationComponent,
       HeaderComponent,
       FooterComponent
       // directives

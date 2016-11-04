@@ -1,7 +1,10 @@
 import { Component } from "@angular/core";
 import { AUTH_PROVIDERS } from "angular2-jwt";
 
-import HomeComponent from "./components/home/HomeComponent";
+import { style } from "../app/styles/app.scss";
+
+import DestinationComponent from "./components/DestinationComponent";
+
 
 
 @Component({
@@ -12,17 +15,19 @@ import HomeComponent from "./components/home/HomeComponent";
 
   ],
   template: `
-              <ctHeader></ctHeader>
-              <div class="" bcSignIn></div>
-              <main class="">
-                <router-outlet></router-outlet>
-              </main>
-              <footer ctFooter class="footer"></footer>
+              <div class="ct-wrapper">
+                <div class="ct-destination-wrapper">
+                  <ctHeader></ctHeader>
+                  <ctDestination></ctDestination>
+                </div>
+
+                <main class="">
+                  <router-outlet></router-outlet>
+                </main>
+                <footer ctFooter class="footer"></footer>
+              </div>
             `,
-  styles: [`
-
-
-          `]
+  styleUrls: style
 })
 export class AppComponent {
   constructor() {

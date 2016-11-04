@@ -1,5 +1,36 @@
+@import "vars";
+
 .nav-menu {
+  text-align: center;
+
   a {
+    position: relative;
     text-transform: uppercase;
+    padding: 6px 10px;
+    font: 12px/1em $font-montserrat;
+    line-height: 2;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      background-color: #8800ff;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -9px;
+        border-bottom: 25px solid #8800ff;
+        border-left: 10px solid transparent;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -9px;
+        border-top: 25px solid #8800ff;
+        border-right: 10px solid transparent;
+      }
+    }
   }
 }

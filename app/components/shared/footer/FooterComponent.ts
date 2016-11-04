@@ -5,7 +5,7 @@ import { style } from "../../../styles/footer.scss";
   selector: "[ctFooter]",
   template: `
             
-                <span class="">2054 space exploration technologies corp.</span>
+                <span class="">&#169; 2054 space exploration technologies corp.</span>
       
             `,
   styleUrls: style
