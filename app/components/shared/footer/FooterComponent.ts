@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { style } from "../../../styles/footer.scss";
+import "./footer.scss";
 
 @Component({
   selector: "[ctFooter]",
@@ -7,8 +7,7 @@ import { style } from "../../../styles/footer.scss";
             
                 <span class="">&#169; 2054 space exploration technologies corp.</span>
       
-            `,
-  styleUrls: style
+            `
 })
 export default class FooterComponent {
 

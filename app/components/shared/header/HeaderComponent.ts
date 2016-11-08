@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Store } from "@ngrx/store";
-import { style } from "../../../styles/header.scss";
+import "./header.scss";
 
 @Component({
   selector: "ctHeader",
@@ -15,8 +15,7 @@ import { style } from "../../../styles/header.scss";
                   <a href="#">contact</a>
                 </nav>
               </header>
-            `,
-  styleUrls: style
+            `
 })
 export default class HeaderComponent {
 

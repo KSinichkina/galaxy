@@ -1,6 +1,9 @@
 "use strict";
 
 var path = require("path");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const NODE_ENV = process.env.NODE_ENV || 'development';
+const webpack = require('webpack');
 
 module.exports = {
   entry: [
@@ -11,23 +14,48 @@ module.exports = {
   output: {
     publicPath: '/public/',
     path: path.join(__dirname, '/public'),
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   resolve: {
+    moduleDirectories: ['node_modules'],
     extensions: ["", ".js", ".ts"]
   },
-  devtool: 'source-map',
+  resolveLoader: {
+    modulesDirectories: ['node_modules'],
+    moduleTemplates: ['*-loader', '*'],
+    extensions: ["", ".js", ".ts"]
+  },
+  watch: NODE_ENV == 'development',
+  watchOptions: {
+    aggregateTimeout: 300
+  },
+  devtool: NODE_ENV == 'development' ? 'source-map' : null,
   module: {
     loaders: [
+      // Javascript: js, jsx
       {
         test: /\.ts/,
-        loaders: ["ts-loader"],
+        loaders: ['ts-loader'],
         exclude: /node_modules/
       },
       {
+        test: /\.(jpe?g|png|gif|svg|ttf|eot|woff|woff2)$/i,
+        loader: "file-loader?name=[name].[ext]?[hash]"
+      },
+      {
         test: /\.scss$/,
-        loaders: ["style?sourceMap", "css?sourceMap", "sass?sourceMap"]
+        loaders: ["style?sourceMap", "css?sourceMap?root=.", "sass?sourceMap"]
+      },
+      {
+        test: /\.css$/,
+        loaders: ["style?sourceMap?root=.", "css?sourceMap?root=."]
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(NODE_ENV)
+    }),
+    new ExtractTextPlugin("[name].css")
+  ]
 }

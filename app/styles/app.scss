@@ -1,12 +1,4 @@
-//@import "vars"; НЕЛЬЗЯ ОТДЕЛЬНО ПОДКЛЮЧАТЬ, У НИХ БУДЕТ РАЗНЫЙ НЕЙМСПЕЙС
-//@import "mixins";
-//@import "animations";
-//@import "elements";
-
-.ct-wrapper {
-  background: #000;
-}
-
-.ct-destination-wrapper {
-  //background: url('../assets/img/bg-image.png') no-repeat;
-}
+@import "vars";
+@import "mixins";
+@import "animations";
+@import "elements";

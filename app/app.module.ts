@@ -10,12 +10,11 @@ import { AUTH_PROVIDERS, JwtHelper } from "angular2-jwt";
 import {APP_BASE_HREF} from '@angular/common';
 
 
-import HomeComponent from "./components/home/HomeComponent";
+import DestinationComponent from "./components/DestinationComponent";
 import HeaderComponent from "./components/shared/header/HeaderComponent";
 import FooterComponent from "./components/shared/footer/FooterComponent";
 
 import { root } from "./reducers/RootReducer";
-import DestinationComponent from "./components/DestinationComponent";
 
 
 

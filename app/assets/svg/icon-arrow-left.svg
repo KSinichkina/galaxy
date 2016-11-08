@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>296683B4-7DBA-4653-BCFF-96850C6B9509</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CT_Homepage" transform="translate(-40.000000, -976.000000)" fill="#FFFFFF">
+            <g id="carousel" transform="translate(-964.000000, 712.000000)">
+                <g id="left" transform="translate(964.000000, 0.000000)">
+                    <path d="M62.9326622,267.913554 L62.9326622,267.913554 L62.9326622,267.913554 L43.6145042,281.068714 C44.1267083,280.719916 44.1278377,279.282091 43.6145042,278.932524 L62.9326622,292.087684 C62.104805,291.523935 60.0009199,292.641308 60.0009199,293.647853 L60.0009199,266.353385 C60.0009199,267.35587 62.1053621,268.476924 62.9326622,267.913554 L62.9326622,267.913554 Z M60.6880773,264.590127 C62.5172017,263.344541 64,264.13547 64,266.353385 L64,293.647853 C64,295.86726 62.5120695,296.653202 60.6880773,295.411111 L41.3699194,282.255952 C39.540795,281.010366 39.5459272,278.987377 41.3699194,277.745287 L60.6880773,264.590127 L60.6880773,264.590127 Z" id="icon_arrow_left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
