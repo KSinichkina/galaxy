@@ -19,6 +19,7 @@ import DestinationComponent from "./components/DestinationComponent";
                 <div class="ct-destination-wrapper">
                   <ctHeader></ctHeader>
                   <ctDestination></ctDestination>
+                  <ctSpaceport></ctSpaceport>
                 </div>
 
                 <main class="">

@@ -23,29 +23,29 @@ import "./img/c-t-homepage-i-s.png";
 
     <div class="destination">
         <h2>1. Choose destination</h2>
-        <ul class="destination-list">
-            <li class="destination-item">
+        <div class="destination-list">
+            <div class="destination-item">
                 <img src="public/venus.png" alt="venus destination"/>
                 <div class="trip-title">
                   <div>venus</div>
                 </div>
                 <span class="trip-days">580 days</span>
-            </li>
-            <li class="destination-item">
+            </div>
+            <div class="destination-item">
                 <img src="public/mars.png" alt="mars destination"/>
                 <div class="trip-title">
                   <div>mars</div>
                 </div>
                 <span class="trip-days">600 days</span>
-            </li>
-            <li class="destination-item">
+            </div>
+            <div class="destination-item">
                 <img src="public/europa.png" alt="europa destination"/>
                 <div class="trip-title">
                   <div>europa</div>
                 </div>
                 <span class="trip-days">1320 days</span>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
   `

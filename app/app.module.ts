@@ -12,6 +12,7 @@ import {APP_BASE_HREF} from '@angular/common';
 
 import DestinationComponent from "./components/DestinationComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
+import SpaceportComponent from "./components/spaceport/SpaceportComponent";
 import FooterComponent from "./components/footer/FooterComponent";
 
 import { root } from "./reducers/RootReducer";
@@ -24,21 +25,18 @@ import { root } from "./reducers/RootReducer";
       AppComponent,
       DestinationComponent,
       HeaderComponent,
+      SpaceportComponent,
       FooterComponent
       // directives
-
     ],
     imports: [
       BrowserModule,
       HttpModule,
       ROUTER_MODULE
-      // RouterModule,
     ],
     providers: [
-      // HTTP_PROVIDERS,
       AUTH_PROVIDERS,
       JwtHelper,
-      // provide(APP_BASE_HREF, {useValue : '/' }),
       provideStore(root)
     ],
     bootstrap:    [AppComponent]
