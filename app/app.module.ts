@@ -13,6 +13,7 @@ import {APP_BASE_HREF} from '@angular/common';
 import DestinationComponent from "./components/DestinationComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
 import SpaceportComponent from "./components/spaceport/SpaceportComponent";
+import SeatComponent from "./components/seat/SeatComponent";
 import FooterComponent from "./components/footer/FooterComponent";
 
 import { root } from "./reducers/RootReducer";
@@ -22,11 +23,12 @@ import { root } from "./reducers/RootReducer";
 @NgModule({
     declarations: [
       // components
-      AppComponent,
-      DestinationComponent,
-      HeaderComponent,
-      SpaceportComponent,
-      FooterComponent
+        AppComponent,
+        DestinationComponent,
+        HeaderComponent,
+        SpaceportComponent,
+        SeatComponent,
+        FooterComponent
       // directives
     ],
     imports: [
