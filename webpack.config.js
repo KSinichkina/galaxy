@@ -32,15 +32,26 @@ module.exports = {
   devtool: NODE_ENV == 'development' ? 'source-map' : null,
   module: {
     loaders: [
-      // Javascript: js, jsx
+      {
+        test: /\.html$/,
+        loaders: [
+          "file-loader?name=[name].[ext]?[hash]",
+          "html-loader?" + JSON.stringify({
+            attrs: ["img:src", "img:ng-src"]
+          })
+        ],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg|ttf|eot|woff|woff2)$/i,
+        loader: "file-loader?name=[name].[ext]?[hash]",
+        query: {
+          name: '/public/[name].[ext]'
+        }
+      },
       {
         test: /\.ts/,
         loaders: ['ts-loader'],
         exclude: /node_modules/
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg|ttf|eot|woff|woff2)$/i,
-        loader: "file-loader?name=[name].[ext]?[hash]"
       },
       {
         test: /\.scss$/,

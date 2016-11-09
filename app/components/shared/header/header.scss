@@ -1,7 +1,18 @@
+.destination-wrapper {
+  background-color: #000;
+  background: url('/public/bg-image.png') no-repeat 0 0;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 44px;
+  left: 20px;
+}
+
 .nav-menu {
   text-align: center;
-  background-color: #000;
-  background: url('./../../../assets/img/bg-image.png') no-repeat 0 0;
+  padding: 44px;
   a {
     position: relative;
     text-transform: uppercase;
@@ -19,17 +30,72 @@
         content: '';
         position: absolute;
         left: -9px;
-        border-bottom: 25px solid #8800ff;
-        border-left: 10px solid transparent;
+        border-bottom: 26px solid #8800ff;
+        border-left: 9px solid transparent;
       }
 
       &:after {
         content: '';
         position: absolute;
+        top: 0;
         right: -9px;
         border-top: 25px solid #8800ff;
-        border-right: 10px solid transparent;
+        border-right: 9px solid transparent;
       }
+    }
+  }
+}
+
+.destination {
+  h2 {
+    font: 24px 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 40px 0;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    .destination-item {
+      position: relative;
+    }
+
+    .trip-title {
+      position: absolute;
+      top: calc( 50% - 30px );
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      width: 142px;
+      font: 24px/1em 'Montserrat';
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 5px;
+      text-align: center;
+      color: #fff;
+      border: 4px solid transparent;
+      padding: 5px;
+      &:hover {
+        transform: skew(-20deg);
+        border: 4px solid #8800ff;
+        div {
+          transform: skew(20deg);
+        }
+      }
+    }
+
+    .trip-days {
+      font: 12px 'Montserrat';
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      display: block;
     }
   }
 }
