@@ -11,8 +11,8 @@ import {APP_BASE_HREF} from '@angular/common';
 
 
 import DestinationComponent from "./components/DestinationComponent";
-import HeaderComponent from "./components/shared/header/HeaderComponent";
-import FooterComponent from "./components/shared/footer/FooterComponent";
+import HeaderComponent from "./components/header/HeaderComponent";
+import FooterComponent from "./components/footer/FooterComponent";
 
 import { root } from "./reducers/RootReducer";
 
