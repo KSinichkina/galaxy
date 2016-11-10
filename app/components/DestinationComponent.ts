@@ -4,7 +4,6 @@ import { Component } from "@angular/core";
     selector: "ctDestination",
     template: `
               <div>
-                Destination
               </div>
             `
 })

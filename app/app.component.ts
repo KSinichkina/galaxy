@@ -21,6 +21,7 @@ import DestinationComponent from "./components/DestinationComponent";
                   <ctDestination></ctDestination>
                   <ctSpaceport></ctSpaceport>
                   <ctSeat></ctSeat>
+                  <ctSummary></ctSummary>
                 </div>
 
                 <main class="">

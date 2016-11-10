@@ -14,6 +14,7 @@ import DestinationComponent from "./components/DestinationComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
 import SpaceportComponent from "./components/spaceport/SpaceportComponent";
 import SeatComponent from "./components/seat/SeatComponent";
+import SummaryComponent from "./components/summary/SummaryComponent";
 import FooterComponent from "./components/footer/FooterComponent";
 
 import { root } from "./reducers/RootReducer";
@@ -28,6 +29,7 @@ import { root } from "./reducers/RootReducer";
         HeaderComponent,
         SpaceportComponent,
         SeatComponent,
+        SummaryComponent,
         FooterComponent
       // directives
     ],
