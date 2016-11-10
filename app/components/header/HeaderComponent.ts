@@ -18,11 +18,12 @@ import "./img/c-t-homepage-i-s.png";
             <a href="#">contact</a>
         </nav>
 
-        <img src="public/c-t-homepage-i-s.png" class="logo" alt="cosmos tours logo" />
+        <div class="logo" alt="cosmos tours logo"></div>
     </header>
 
+    <h2>1. Choose destination</h2>
+
     <div class="destination">
-        <h2>1. Choose destination</h2>
         <div class="destination-list">
             <div class="destination-item">
                 <img src="public/venus.png" alt="venus destination"/>

@@ -6,9 +6,8 @@ import "./seat.scss";
   selector: "ctSeat",
   template: `
   <div class="seat-wrapper">
+    <h2>2. seat</h2>
     <div class="seat">
-        <h2>2. seat</h2>
-
         <div class="shuttle">
           <div class="shuttle-root">
             <div class="shuttle-cabin"></div>

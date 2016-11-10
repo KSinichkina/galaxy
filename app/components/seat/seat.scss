@@ -19,9 +19,7 @@
 .seat-wrapper {
   background-color: #2d2b2e;
   padding: 40px 0;
-}
 
-.seat {
   h2 {
     font: 24px 'Montserrat';
     font-weight: bold;
@@ -30,7 +28,9 @@
     color: #fff;
     text-transform: uppercase;
   }
+}
 
+.seat {
   &:hover {
     .shuttle-door-down {
       animation: doorDown 2s 1s;

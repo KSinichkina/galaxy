@@ -1,14 +1,27 @@
 .destination-wrapper {
-  background-color: #000;
-  background: url('./../../assets/img/bg-image.png') no-repeat 0 0;
+  background: url('./../../assets/img/bg-image.png') #000 no-repeat 0 0;
   background-size: cover;
   padding: 44px 20px 80px;
+
+  h2 {
+    font: 24px 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 80px 0 40px 0;
+  }
 }
 
 .logo {
   position: absolute;
   top: 44px;
   left: 20px;
+  width: 210px;
+  height: 24px;
+  background: url('./../../assets/img/c-t-homepage-i-s.png') no-repeat center center;
+  background-size: contain;
 }
 
 .nav-menu {
@@ -47,15 +60,6 @@
 }
 
 .destination {
-  h2 {
-    font: 24px 'Montserrat';
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 80px 0 40px 0;
-  }
   &-list {
     display: flex;
     justify-content: space-around;

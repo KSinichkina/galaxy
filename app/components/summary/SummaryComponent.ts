@@ -7,13 +7,13 @@ import "./summary.scss";
   selector: "ctSummary",
   template: `
   <div class="summary-wrapper">
-     <div class="summary">
-      <h2>2. summary</h2>
+    <h2>2. summary</h2>
+    <div class="summary">
       <div class="users-summary">
         <div class="users-info">
           <label>First name</label>
           <input type="text"  pattern="[aA-zZ]*" [(ngModel)]="name" />
-          <div class="marker">
+          <div class="marker"></div>
         </div>
 
         <div class="users-info">
@@ -40,12 +40,13 @@ import "./summary.scss";
             <div class="ticket">ticket</div>
           </div>
 
-          <div class="ticket-header">
-            <div class="logo"></div>
-            <div class="ticket">ticket</div>
+          <div class="tour-info">
+            <h3 class="planet">Mars</h3>
+            <div class="cosmodrom">CNR - Cape Canaveral</div>
+            <div class="fly-date">January 20, 2055</div>
           </div>
 
-          <div class="seat-info"></div>
+          <div class="seat-number">Seat 3</div>
           <div class="name-info">
             <span class="last-name-info">{{ name }}</span>
             <span class="last-name-info">{{ lastname }}</span>
@@ -53,8 +54,8 @@ import "./summary.scss";
           <div class="email-info">{{ email }}</div>
           <div class="phone-info">{{ phone }}</div>
         </div>
-      <input type="submit" class="continue__btn" value="Continue" />
     </div>
+    <input type="submit" class="continue__btn" value="Continue" />
 </div>
   `
 })

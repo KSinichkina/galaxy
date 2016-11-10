@@ -1,36 +1,75 @@
 .summary-wrapper {
-  background-color: #2d2b2e;
-  padding: 40px 0 80px;
-}
+  background: url('./../../assets/img/bg-image2.png') #000 no-repeat 0 0;
+  background-size: cover;
+  padding: 95px 136px 130px;
 
-.summary {
   h2 {
     font: 24px 'Montserrat';
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
-    color: #fff;
     text-transform: uppercase;
+    margin: 0 0 65px;
+    color: #fff;
   }
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 96px;
+
   .users-info {
     position: relative;
+    margin-bottom: 22px;
+
+    label {
+      font: 12px/2em 'Montserrat';
+      color: rgba(255, 255, 255, .6);
+      text-transform: uppercase;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font: 16px/2.5em 'Montserrat';
+      color: #fff;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    .marker {
+      position: relative;
+      border-bottom: 4px solid rgba(255, 255, 255,.3);
+    }
+
+    input:focus + .marker {
+      border-bottom: 4px solid rgba(255,255,255,1);
+    }
 
     input:invalid {
       & + .marker:before {
         content: 'Incorrect last name';
-        color: #e15968;
         position: absolute;
-        top: -20px;
+        top: -65px;
         right: 0;
-        font: 12px/1em 'Montserrat'
+        font: 12px/1em 'Montserrat';
+        color: #e15968;
       }
       & + .marker:after {
         content: 'X';
-        color: #e15968;
         position: absolute;
-        top: 0;
+        top: -35px;
         right: 0;
-        font: 24px/1em 'Montserrat'
+        font: 24px/1em 'Montserrat';
+        color: #e15968;
       }
     }
 
@@ -40,18 +79,96 @@
       }
       & + .marker:after {
         content: '+';
-        color: #fff;
         position: absolute;
-        top: 0;
+        top: -35px;
         right: 0;
-        font: 24px/1em 'Montserrat'
+        font: 24px/1em 'Montserrat';
+        color: #fff;
       }
     }
   }
 
+  .users-summary {
+    width: 416px;
+    height: 368px;
+  }
+
   .users-ticket {
+    width: 520px;
+    height: 368px;
     background: #fff;
     padding: 30px;
     border-radius: 5px;
+
+    .ticket-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 4px solid rgba(0, 0, 0,.1);
+      padding-bottom: 24px;
+
+      .logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 210px;
+        height: 24px;
+        background: url('./../../assets/img/logo-ticket.png') no-repeat center center;
+        background-size: contain;
+      }
+
+      .ticket {
+        font: 24px 'Montserrat';
+        color:  #8800ff;
+        text-transform: uppercase;
+      }
+    }
+
+    .tour-info {
+      border-bottom: 4px solid rgba(0, 0, 0,.1);
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+      overflow: hidden;
+
+      .planet {
+        text-transform: uppercase;
+        font: 24px/1em 'Montserrat';
+        margin: 23px 0 0;
+      }
+
+      .cosmodrom {
+        font: 16px/1.5em 'Montserrat';
+        float: left;
+      }
+
+      .fly-date {
+        font: 16px/1.5em 'Montserrat';
+        text-align: right;
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .seat-number,
+    .name-info span{
+      font: 16px/1.5em 'Montserrat';
+      color: #000;
+    }
+
+    .email-info,
+    .phone-info {
+      font: 16px/1.5em 'Montserrat';
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
+}
+
+.continue__btn {
+  width: 285px;
+  height: 72px;
+  background-color: #8800ff;
+  font: 24px/1em 'Montserrat';
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  display: block;
 }

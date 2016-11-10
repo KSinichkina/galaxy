@@ -1,9 +1,7 @@
 .spaceport-wrapper {
   background-color: #2d2b2e;
   padding: 80px;
-}
 
-.spaceport {
   h2 {
     font: 24px 'Montserrat';
     font-weight: bold;
@@ -13,6 +11,9 @@
     text-transform: uppercase;
     margin: 80px 0 40px 0;
   }
+}
+
+.spaceport {
   &-list {
     display: flex;
     justify-content: space-around;

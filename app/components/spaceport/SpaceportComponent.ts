@@ -6,8 +6,8 @@ import "./spaceport.scss";
   selector: "ctSpaceport",
   template: `
   <div class="spaceport-wrapper">
+    <h2>2. spaceport</h2>
     <div class="spaceport">
-        <h2>2. spaceport</h2>
         <div class="spaceport-list">
             <div class="spaceport-item active">
                <div class="star"></div>
