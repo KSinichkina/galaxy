@@ -13,6 +13,7 @@ import {APP_BASE_HREF} from '@angular/common';
 
 import DestinationComponent from "./components/DestinationComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
+import CarouselComponent from "./components/carousel/CarouselComponent";
 import SpaceportComponent from "./components/spaceport/SpaceportComponent";
 import SeatComponent from "./components/seat/SeatComponent";
 import SummaryComponent from "./components/summary/SummaryComponent";
@@ -28,6 +29,7 @@ import { root } from "./reducers/RootReducer";
         AppComponent,
         DestinationComponent,
         HeaderComponent,
+        CarouselComponent,
         SpaceportComponent,
         SeatComponent,
         SummaryComponent,

@@ -1,0 +1,37 @@
+.carousel-wrapper {
+  background-color: #2d2b2e;
+  padding: 40px 0;
+}
+
+.wr {
+  width: 100%;
+  overflow: hidden;
+}
+.wrap {
+  border: 1px solid;
+  overflow: scroll;
+  width: 600%;
+  transform: translateX(-11%);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.r {
+  background: red;
+}
+.b {
+  background: blue;
+}
+.g {
+  background: green;
+}
+.y {
+  background: yellow;
+}
+.d {
+  height: 50px;
+  width: 13%;
+  display: inline-block;
+  float: left;
+}
