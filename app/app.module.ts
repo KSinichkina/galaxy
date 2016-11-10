@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { provideStore } from "@ngrx/store";
 import { ROUTER_MODULE } from "./app.routes";
@@ -35,6 +36,7 @@ import { root } from "./reducers/RootReducer";
     ],
     imports: [
       BrowserModule,
+      FormsModule,
       HttpModule,
       ROUTER_MODULE
     ],
