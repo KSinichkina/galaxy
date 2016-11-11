@@ -4,8 +4,7 @@
   padding: 44px 20px 80px;
 
   h2 {
-    font: 24px 'Montserrat';
-    font-weight: bold;
+    font: 24px 'Montserrat-Bold';
     letter-spacing: 5px;
     text-align: center;
     color: #fff;
@@ -30,7 +29,7 @@
     position: relative;
     text-transform: uppercase;
     padding: 6px 10px;
-    font: 12px/1em 'Verdana';
+    font: 12px/1em 'Montserrat';
     line-height: 2;
     letter-spacing: 0.9px;
     text-decoration: none;
@@ -77,9 +76,8 @@
       margin: 0 auto;
 
       width: 142px;
-      font: 24px/1em 'Montserrat';
+      font: 24px/1em 'Montserrat-Bold';
       text-transform: uppercase;
-      font-weight: bold;
       letter-spacing: 5px;
       text-align: center;
       color: #fff;
@@ -95,8 +93,7 @@
     }
 
     .trip-days {
-      font: 12px 'Montserrat';
-      font-weight: bold;
+      font: 12px 'Montserrat-Bold';
       text-align: center;
       color: #fff;
       display: block;

@@ -1,3 +1,17 @@
 $violet: #8800ff;
 
-$font-montserrat: 'Montserrat';
+@font-face {
+  font-family: 'Montserrat';
+  src: ('./../assets/font/Montserrat-Regular.ttf');
+  src: local('☺'), url('./../assets/font/Montserrat-Regular.woff') format('woff'), url('./../assets/font/Montserrat-Regular.ttf') format('truetype'), url('./../assets/font/Montserrat-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: ('./../assets/font/Montserrat-Bold.ttf');
+  src: local('☺'), url('./../assets/font/Montserrat-Bold.woff') format('woff'), url('./../assets/font/Montserrat-Bold.ttf') format('truetype'), url('./../assets/font/Montserrat-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

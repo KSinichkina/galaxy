@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { AUTH_PROVIDERS } from "angular2-jwt";
 
-//import { style } from "../app/styles/app.scss";
+import "../app/styles/app.scss";
 
 import DestinationComponent from "./components/DestinationComponent";
 
