@@ -4,7 +4,8 @@
   padding: 95px 136px 130px;
 
   h2 {
-    font: 24px 'Montserrat-Bold';
+    font: 24px 'Montserrat';
+    font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -62,26 +63,43 @@
         font: 12px/1em 'Montserrat';
         color: #e15968;
       }
-      & + .marker:after {
-        content: 'X';
+      //& + .marker:after {
+      //  content: 'X';
+      //  position: absolute;
+      //  top: -35px;
+      //  right: 0;
+      //  font: 24px/1em 'Montserrat';
+      //  color: #e15968;
+      //}
+      & + .marker .icon-check {
+        display: none;
+      }
+      & + .marker .icon-close-16 {
         position: absolute;
-        top: -35px;
+        top: -25px;
         right: 0;
-        font: 24px/1em 'Montserrat';
         color: #e15968;
       }
+
     }
 
     input:valid {
-      & + .marker:before {
+      & + .marker:before,
+      & + .marker .icon-close-16 {
         display: none;
       }
-      & + .marker:after {
-        content: '+';
+      //& + .marker:after {
+      //  content: '+';
+      //  position: absolute;
+      //  top: -35px;
+      //  right: 0;
+      //  font: 24px/1em 'Montserrat';
+      //  color: #fff;
+      //}
+      & + .marker .icon-check {
         position: absolute;
-        top: -35px;
+        top: -25px;
         right: 0;
-        font: 24px/1em 'Montserrat';
         color: #fff;
       }
     }

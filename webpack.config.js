@@ -4,6 +4,7 @@ var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
+var SvgSpritePlugin = require('webpack-svg-sprite-plugin');
 
 module.exports = {
   entry: [
@@ -48,6 +49,10 @@ module.exports = {
           name: '/assets/[name].[ext]'
         }
       },
+      //{
+      //  test: /\.svg$/,
+      //  loader: 'svg-sprite'
+      //},
       {
         test: /\.ts/,
         loaders: ['ts-loader'],
@@ -67,6 +72,7 @@ module.exports = {
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV)
     }),
-    new ExtractTextPlugin("[name].css")
+    new ExtractTextPlugin("[name].css"),
+    new SvgSpritePlugin({ filename: 'sprite.svg' })
   ]
 }
