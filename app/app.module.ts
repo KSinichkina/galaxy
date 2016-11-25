@@ -10,7 +10,6 @@ import { HttpModule } from "@angular/http";
 import { AUTH_PROVIDERS, JwtHelper } from "angular2-jwt";
 import {APP_BASE_HREF} from '@angular/common';
 
-
 import DestinationComponent from "./components/DestinationComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
 import CarouselComponent from "./components/carousel/CarouselComponent";
@@ -33,7 +32,7 @@ import { root } from "./reducers/RootReducer";
         SpaceportComponent,
         SeatComponent,
         SummaryComponent,
-        FooterComponent
+        FooterComponent,
       // directives
     ],
     imports: [

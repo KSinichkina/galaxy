@@ -8,7 +8,11 @@ import "./carousel.scss";
   <div class="carousel-wrapper">
     <div class="carousel">
       <div class="wr">
-        <div class="wrap">
+        <div>
+          <div (click)="left()">L</div>
+          <div (click)="right()">R</div>
+        </div>
+        <div class="wrap" styled>
           <div class="y d"></div>
           <div class="r d"></div>
           <div class="b d"></div>
@@ -21,6 +25,16 @@ import "./carousel.scss";
 </div>
   `
 })
-export default class CarouselComponent {
 
+export default class CarouselComponent {
+  //public param: Number;
+
+  left(event) {
+    //param = -24;
+    //$('.wrap').css({'transform': 'translateX(-24%);'});
+    console.log('left');
+  }
+  right(event) {
+    console.log('right');
+  }
 }
