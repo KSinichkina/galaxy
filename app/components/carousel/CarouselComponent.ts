@@ -5,14 +5,14 @@ import "./carousel.scss";
 @Component({
   selector: "ctCarousel",
   template: `
-  <div class="carousel-wrapper">
-    <div class="carousel">
-      <div class="wr">
-        <div>
-          <div (click)="left()">L</div>
-          <div (click)="right()">R</div>
+  <div class="carousel">
+    <div class="carousel-wrapper">
+      <div class="carousel-wrapper-visible">
+        <div class="carousel-control" >
+          <div (click)="leftSliding()"><div class="icon-arrow-left"></div></div>
+          <div (click)="rightSliding()"><div class="icon-arrow-right"></div></div>
         </div>
-        <div class="wrap" styled>
+        <div class="carousel-container"  [style.transform]="slideCarousel()">
           <div class="y d"></div>
           <div class="r d"></div>
           <div class="b d"></div>
@@ -20,21 +20,29 @@ import "./carousel.scss";
           <div class="y d"></div>
           <div class="r d"></div>
         </div>
+
       </div>
     </div>
 </div>
+
   `
 })
 
 export default class CarouselComponent {
-  //public param: Number;
+  slideValue: Number = -11;
 
-  left(event) {
-    //param = -24;
-    //$('.wrap').css({'transform': 'translateX(-24%);'});
-    console.log('left');
+  slideCarousel () {
+      return "translateX(" + this.slideValue + "%)";
   }
-  right(event) {
-    console.log('right');
+
+  leftSliding(event) {
+    if (this.slideValue >= -37) {
+      this.slideValue = this.slideValue  - 13;
+    }
+  }
+  rightSliding(event) {
+    if (this.slideValue <= -24) {
+      this.slideValue = this.slideValue + 13;
+    }
   }
 }
