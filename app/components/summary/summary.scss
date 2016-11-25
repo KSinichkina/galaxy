@@ -63,14 +63,6 @@
         font: 12px/1em 'Montserrat';
         color: #e15968;
       }
-      //& + .marker:after {
-      //  content: 'X';
-      //  position: absolute;
-      //  top: -35px;
-      //  right: 0;
-      //  font: 24px/1em 'Montserrat';
-      //  color: #e15968;
-      //}
       & + .marker .icon-check {
         display: none;
       }
@@ -83,19 +75,19 @@
 
     }
 
+    input.ng-untouched {
+      & + .marker:before,
+      & + .marker .icon-close-16,
+      & + .marker .icon-check {
+        display: none;
+      }
+    }
+
     input:valid {
       & + .marker:before,
       & + .marker .icon-close-16 {
         display: none;
       }
-      //& + .marker:after {
-      //  content: '+';
-      //  position: absolute;
-      //  top: -35px;
-      //  right: 0;
-      //  font: 24px/1em 'Montserrat';
-      //  color: #fff;
-      //}
       & + .marker .icon-check {
         position: absolute;
         top: -25px;
