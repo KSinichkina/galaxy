@@ -14,8 +14,8 @@
   &-container {
     border: 1px solid;
     overflow: scroll;
-    width: 600%;
-    transform: translateX(-11%);
+    width: 500%;
+    transform: translateX(-17%);
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
@@ -23,23 +23,12 @@
   }
 }
 
-
-
-.r {
-  background: red;
-}
-.b {
-  background: blue;
-}
-.g {
-  background: green;
-}
-.y {
-  background: yellow;
-}
 .d {
-  height: 50px;
-  width: 13%;
+  width: 18%;
   display: inline-block;
   float: left;
+
+  img {
+    width: 100%;
+  }
 }
