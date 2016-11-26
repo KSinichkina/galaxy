@@ -9,8 +9,6 @@ import DestinationComponent from "./components/DestinationComponent";
 
 @Component({
   selector: "[myApp]",
-  // directives: [
-  // ],
   providers: [
 
   ],
@@ -25,7 +23,7 @@ import DestinationComponent from "./components/DestinationComponent";
                   <ctSummary></ctSummary>
                 </div>
 
-                <main class="">
+                <main>
                   <router-outlet></router-outlet>
                 </main>
                 <footer ctFooter class="footer"></footer>

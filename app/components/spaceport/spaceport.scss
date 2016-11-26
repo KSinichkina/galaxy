@@ -2,7 +2,7 @@
   background-color: #2d2b2e;
   padding: 80px;
 
-  h2 {
+  .spaceport__title {
     font: 24px 'Montserrat-Bold';
     letter-spacing: 5px;
     text-align: center;
@@ -35,7 +35,7 @@
       }
 
       &__dep, &__info {
-        font: 12px 'Montserrat';
+        font: 12px 'Montserrat-Regular';
         text-align: center;
         color: #fff;
         opacity: 0.3;

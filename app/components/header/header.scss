@@ -3,7 +3,7 @@
   background-size: cover;
   padding: 44px 20px 80px;
 
-  h2 {
+  .destination__title {
     font: 24px 'Montserrat-Bold';
     letter-spacing: 5px;
     text-align: center;
@@ -25,24 +25,27 @@
 
 .nav-menu {
   text-align: center;
-  a {
+
+  &__item {
     position: relative;
     text-transform: uppercase;
     padding: 6px 10px;
-    font: 12px/1em 'Montserrat';
+    font: 12px/1em 'Montserrat-Regular';
     line-height: 2;
     letter-spacing: 0.9px;
     text-decoration: none;
     color: #fff;
 
     &:hover {
+      text-decoration: none;
       background-color: #8800ff;
+      color: #fff;
 
       &:before {
         content: '';
         position: absolute;
         left: -8px;
-        border-bottom: 26px solid #8800ff;
+        border-bottom: 25px solid #8800ff;
         border-left: 9px solid transparent;
       }
 
@@ -86,7 +89,7 @@
       &:hover {
         transform: skew(-20deg);
         border: 4px solid #8800ff;
-        div {
+        .trip-title__text {
           transform: skew(20deg);
         }
       }

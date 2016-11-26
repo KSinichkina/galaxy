@@ -1,45 +1,29 @@
+@mixin carouselControls($dir) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(#{$dir}, rgba(0,0,0,.5), rgba(0,0,0,.8));
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1.1em 0 0 -0.4em;
+  }
+
+  @if $dir == 'to left' {
+    right: 0;
+    left: auto;
+  }
+}
+
 .carousel {
   position: relative;
   background-color: #2d2b2e;
 
-  &-controls {
-    color: #fff;
-    font-size: 2.3em;
-
-    &__left {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 5%;
-      height: 100%;
-      background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.8));
-
-      span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -1.1em 0 0 -0.4em;
-      }
-    }
-
-    &__right {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 5%;
-      height: 100%;
-      background: linear-gradient(to left, rgba(0,0,0,.5), rgba(0,0,0,.8));
-
-      span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -1.1em 0 0 -0.4em;
-      }
-    }
-  }
-
-  &-wrapper-visible  {
+  &-overflow-wrapper  {
     width: 100%;
     overflow: hidden;
   }
@@ -49,19 +33,29 @@
     overflow: scroll;
     width: 500%;
     transform: translateX(-17%);
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
   }
-}
 
-.d {
-  width: 18%;
-  display: inline-block;
-  float: left;
+  &-controls {
+    color: #fff;
+    font-size: 2.3em;
 
-  img {
-    width: 100%;
+    &__left {
+      @include carouselControls('to right');
+    }
+
+    &__right {
+      @include carouselControls('to left');
+    }
+  }
+
+  &-image-container {
+    width: 18%;
+    display: inline-block;
+    float: left;
+
+    &__image {
+      width: 100%;
+    }
   }
 }

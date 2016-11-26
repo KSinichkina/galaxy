@@ -6,7 +6,7 @@ import "./seat.scss";
   selector: "ctSeat",
   template: `
   <div class="seat-wrapper">
-    <h2>2. seat</h2>
+    <h2 class="seat__title">2. seat</h2>
     <div class="seat">
         <div class="shuttle">
           <div class="shuttle-root">
@@ -14,14 +14,14 @@ import "./seat.scss";
             <div class="shuttle-seats">
               <div class="shuttle-seats-block">
                 <ul class="shuttle-seats__list">
-                  <li>1</li>
-                  <li>2</li>
-                  <li class="active">3</li>
-                  <li>4</li>
-                  <li>5</li>
-                  <li>6</li>
-                  <li>7</li>
-                  <li>8</li>
+                  <li class="shuttle-seats__item">1</li>
+                  <li class="shuttle-seats__item">2</li>
+                  <li class="shuttle-seats__item is-active">3</li>
+                  <li class="shuttle-seats__item">4</li>
+                  <li class="shuttle-seats__item">5</li>
+                  <li class="shuttle-seats__item">6</li>
+                  <li class="shuttle-seats__item">7</li>
+                  <li class="shuttle-seats__item">8</li>
                 </ul>
               </div>
               <div class="shuttle-door-up"></div>

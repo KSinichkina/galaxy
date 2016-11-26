@@ -1,13 +1,12 @@
 import { Component } from "@angular/core";
 import { Store } from "@ngrx/store";
 import "./spaceport.scss";
-//import "./../../assets/svg/icon-star.svg";
 
 @Component({
   selector: "ctSpaceport",
   template: `
   <div class="spaceport-wrapper">
-    <h2>2. spaceport</h2>
+    <h2 class="spaceport__title">2. spaceport</h2>
     <div class="spaceport">
         <div class="spaceport-list">
             <div class="spaceport-item active">
@@ -18,7 +17,6 @@ import "./spaceport.scss";
                <div class="spaceport-item__info">Nearest flight</div>
             </div>
             <div class="spaceport-item">
-               <!--<svg class="icon"><use xlink:href="#icon-star" /></svg>-->
                <div class="icon-star"></div>
                <h3 class="spaceport-item__title">Vandenberg</h3>
                <div class="spaceport-item__dep">Florida, United States</div>

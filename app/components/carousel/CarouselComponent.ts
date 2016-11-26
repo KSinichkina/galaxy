@@ -7,36 +7,36 @@ import "./img/img2.png"
 import "./img/img3.png"
 
 @Component({
-  selector: "ctCarousel",
-  template: `
+    selector: "ctCarousel",
+    template: `
   <div class="carousel">
     <div class="carousel-wrapper">
-      <div class="carousel-wrapper-visible">
+      <div class="carousel-overflow-wrapper">
         <div class="carousel-container"  [style.transform]="slideCarousel()">
-          <div class="y d">
-            <img src="public/assets/img3.png" />
+          <div class="carousel-image-container">
+            <img class="carousel-image-container__image" src="public/assets/img3.png" />
           </div>
-          <div class="r d">
-            <img src="public/assets/img1.png" />
+          <div class="carousel-image-container">
+            <img class="carousel-image-container__image" src="public/assets/img1.png" />
           </div>
-          <div class="b d">
-            <img src="public/assets/img2.png" />
+          <div class="carousel-image-container">
+            <img class="carousel-image-container__image" src="public/assets/img2.png" />
           </div>
-          <div class="g d">
-            <img src="public/assets/img3.png" />
+          <div class="carousel-image-container">
+            <img class="carousel-image-container__image" src="public/assets/img3.png" />
           </div>
-          <div class="y d">
-            <img src="public/assets/img1.png" />
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <div (click)="leftSliding()" class="carousel-controls__left">
-            <span class="icon-arrow-left"></span>
-          </div>
-          <div (click)="rightSliding()" class="carousel-controls__right">
-            <span class="icon-arrow-right"></span>
+          <div class="carousel-image-container">
+            <img class="carousel-image-container__image" src="public/assets/img1.png" />
           </div>
         </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <div (click)="leftSliding()" class="carousel-controls__left">
+        <span class="icon icon-arrow-left"></span>
+      </div>
+      <div (click)="rightSliding()" class="carousel-controls__right">
+        <span class="icon icon-arrow-right"></span>
       </div>
     </div>
 </div>
@@ -44,21 +44,23 @@ import "./img/img3.png"
   `
 })
 
-export default class CarouselComponent {
-  slideValue: Number = -17;
+export default
+class CarouselComponent {
+    slideValue:Number = -17;
 
-  slideCarousel () {
-      return "translateX(" + this.slideValue + "%)";
-  }
+    slideCarousel() {
+        return "translateX(" + this.slideValue + "%)";
+    }
 
-  rightSliding(event) {
-    if (this.slideValue >= -35) {
-      this.slideValue = this.slideValue  - 18;
+    rightSliding(event) {
+        if (this.slideValue >= -35) {
+            this.slideValue = this.slideValue - 18;
+        }
     }
-  }
-  leftSliding(event) {
-    if (this.slideValue <= -35) {
-      this.slideValue = this.slideValue + 18;
+
+    leftSliding(event) {
+        if (this.slideValue <= -35) {
+            this.slideValue = this.slideValue + 18;
+        }
     }
-  }
 }
