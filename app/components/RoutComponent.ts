@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "ctDestination",
+    selector: "ctRout",
     template: `
               <div>
               </div>
             `
 })
-export default class DestinationComponent {
+export default class RoutComponent {
 
 }

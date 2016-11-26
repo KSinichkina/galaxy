@@ -1,27 +1,28 @@
-.seat-wrapper {
+.seat {
   padding: 40px 0;
   background-color: #2d2b2e;
 
-  .seat__title {
+  &__title {
     font: 24px 'Montserrat-Bold';
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
   }
-}
 
-.seat {
-  &:hover {
-    .shuttle-door-down {
-      transform: translate(0, 120px);
-    }
+  &-wrapper {
+    &:hover {
+      .shuttle-door-down {
+        transform: translate(0, 120px);
+      }
 
-    .shuttle-door-up {
-      transform: translate(0, -120px);
+      .shuttle-door-up {
+        transform: translate(0, -120px);
+      }
     }
   }
 }
+
 
 .shuttle {
   overflow: hidden;

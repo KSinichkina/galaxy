@@ -1,9 +1,9 @@
-.summary-wrapper {
+.summary {
   padding: 95px 136px 130px;
   background: url('./../../assets/img/bg-image2.png') #000 no-repeat 0 0;
   background-size: cover;
 
-  .summary__title {
+  &__title {
     margin: 0 0 65px;
     font: 24px 'Montserrat-Regular';
     font-weight: bold;
@@ -12,163 +12,162 @@
     text-transform: uppercase;
     color: #fff;
   }
-}
 
-.summary {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 96px;
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 96px;
 
-  .users-info {
-    position: relative;
-    margin-bottom: 22px;
-
-    &__label {
-      font: 12px/2em 'Montserrat-Regular';
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, .6);
-    }
-
-    &__input {
-      width: 100%;
-      border: none;
-      outline: none;
-      background: transparent;
-      font: 16px/2.5em 'Montserrat-Regular';
-      color: #fff;
-
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-
-      &:focus + .validation-marker {
-        border-bottom: 4px solid rgba(255,255,255,1);
-      }
-
-      &:invalid {
-        & + .validation-marker:before {
-          content: 'Incorrect last name';
-          position: absolute;
-          top: -65px;
-          right: 0;
-          font: 12px/1em 'Montserrat-Regular';
-          color: #e15968;
-        }
-        & + .validation-marker .icon-check {
-          display: none;
-        }
-        & + .validation-marker .icon-close-16 {
-          position: absolute;
-          top: -25px;
-          right: 0;
-          color: #e15968;
-        }
-      }
-
-      &:valid {
-        & + .validation-marker:before,
-        & + .validation-marker .icon-close-16 {
-          display: none;
-        }
-        & + .validation-marker .icon-check {
-          position: absolute;
-          top: -25px;
-          right: 0;
-          color: #fff;
-        }
-      }
-
-      &.ng-untouched {
-        & + .validation-marker:before,
-        & + .validation-marker .icon-close-16,
-        & + .validation-marker .icon-check {
-          display: none;
-        }
-      }
-    }
-
-    .validation-marker {
+    .users-info {
       position: relative;
-      border-bottom: 4px solid rgba(255, 255, 255,.3);
-    }
-  }
+      margin-bottom: 22px;
 
-  .users-summary {
-    width: 416px;
-    height: 368px;
-  }
+      &__label {
+        font: 12px/2em 'Montserrat-Regular';
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .6);
+      }
 
-  .users-ticket {
-    padding: 30px;
-    width: 520px;
-    height: 368px;
-    border-radius: 5px;
-    background: #fff;
+      &__input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        font: 16px/2.5em 'Montserrat-Regular';
+        color: #fff;
 
-    .ticket-header {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 24px;
-      border-bottom: 4px solid rgba(0, 0, 0,.1);
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
 
-      .logo {
+        &:focus + .validation-marker {
+          border-bottom: 4px solid rgba(255,255,255,1);
+        }
+
+        &:invalid {
+          & + .validation-marker:before {
+            content: 'Incorrect last name';
+            position: absolute;
+            top: -65px;
+            right: 0;
+            font: 12px/1em 'Montserrat-Regular';
+            color: #e15968;
+          }
+          & + .validation-marker .icon-check {
+            display: none;
+          }
+          & + .validation-marker .icon-close {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            color: #e15968;
+          }
+        }
+
+        &:valid {
+          & + .validation-marker:before,
+          & + .validation-marker .icon-close {
+            display: none;
+          }
+          & + .validation-marker .icon-check {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            color: #fff;
+          }
+        }
+
+        &.ng-untouched {
+          & + .validation-marker:before,
+          & + .validation-marker .icon-close,
+          & + .validation-marker .icon-check {
+            display: none;
+          }
+        }
+      }
+
+      .validation-marker {
         position: relative;
-        top: 0;
-        left: 0;
-        width: 210px;
-        height: 24px;
-        background: url('./../../assets/img/logo-ticket.png') no-repeat center center;
-        background-size: contain;
-      }
-
-      .ticket {
-        font: 24px 'Montserrat-Regular';
-        color:  #8800ff;
-        text-transform: uppercase;
+        border-bottom: 4px solid rgba(255, 255, 255,.3);
       }
     }
 
-    .tour-info {
-      padding-bottom: 24px;
-      margin-bottom: 30px;
-      overflow: hidden;
-      border-bottom: 4px solid rgba(0, 0, 0,.1);
+    .users-summary {
+      width: 416px;
+      height: 368px;
+    }
 
-      .planet {
-        margin: 23px 0 0;
-        font: 24px/1em 'Montserrat-Regular';
-        text-transform: uppercase;
+    .users-ticket {
+      padding: 30px;
+      width: 520px;
+      height: 368px;
+      border-radius: 5px;
+      background: #fff;
+
+      .ticket-header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        border-bottom: 4px solid rgba(0, 0, 0,.1);
+
+        .logo {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 210px;
+          height: 24px;
+          background: url('./../../assets/img/logo-ticket.png') no-repeat center center;
+          background-size: contain;
+        }
+
+        .ticket {
+          font: 24px 'Montserrat-Regular';
+          color:  #8800ff;
+          text-transform: uppercase;
+        }
       }
 
-      .cosmodrom {
-        font: 16px/1.5em 'Montserrat-Regular';
-        float: left;
+      .tour-info {
+        padding-bottom: 24px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        border-bottom: 4px solid rgba(0, 0, 0,.1);
+
+        .planet {
+          margin: 23px 0 0;
+          font: 24px/1em 'Montserrat-Regular';
+          text-transform: uppercase;
+        }
+
+        .cosmodrom {
+          font: 16px/1.5em 'Montserrat-Regular';
+          float: left;
+        }
+
+        .fly-date {
+          font: 16px/1.5em 'Montserrat-Regular';
+          text-align: right;
+          color: rgba(0, 0, 0, 0.3);
+        }
       }
 
-      .fly-date {
+      .seat-number,
+      .name-info .last-name-info {
         font: 16px/1.5em 'Montserrat-Regular';
-        text-align: right;
+        color: #000;
+      }
+
+      .email-info,
+      .phone-info {
+        font: 16px/1.5em 'Montserrat-Regular';
         color: rgba(0, 0, 0, 0.3);
       }
     }
-
-    .seat-number,
-    .name-info .last-name-info {
-      font: 16px/1.5em 'Montserrat-Regular';
-      color: #000;
-    }
-
-    .email-info,
-    .phone-info {
-      font: 16px/1.5em 'Montserrat-Regular';
-      color: rgba(0, 0, 0, 0.3);
-    }
   }
 }
-
 .continue__btn {
   display: block;
   margin: 0 auto;

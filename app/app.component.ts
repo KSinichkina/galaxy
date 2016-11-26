@@ -3,7 +3,7 @@ import { AUTH_PROVIDERS } from "angular2-jwt";
 
 import "../app/styles/app.scss";
 
-import DestinationComponent from "./components/DestinationComponent";
+import RoutComponent from "./components/RoutComponent";
 
 
 
@@ -13,15 +13,12 @@ import DestinationComponent from "./components/DestinationComponent";
 
   ],
   template: `
-              <div class="ct-wrapper">
-                <div class="ct-destination-wrapper">
-                  <ctHeader></ctHeader>
-                  <ctCarousel></ctCarousel>
+              <div class="ct-layout">
                   <ctDestination></ctDestination>
+                  <ctCarousel></ctCarousel>
                   <ctSpaceport></ctSpaceport>
                   <ctSeat></ctSeat>
                   <ctSummary></ctSummary>
-                </div>
 
                 <main>
                   <router-outlet></router-outlet>

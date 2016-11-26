@@ -5,9 +5,9 @@ import "./seat.scss";
 @Component({
   selector: "ctSeat",
   template: `
-  <div class="seat-wrapper">
+  <div class="seat">
     <h2 class="seat__title">2. seat</h2>
-    <div class="seat">
+    <div class="seat-wrapper">
         <div class="shuttle">
           <div class="shuttle-root">
             <div class="shuttle-cabin"></div>

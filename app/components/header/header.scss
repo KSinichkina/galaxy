@@ -1,18 +1,3 @@
-.destination-wrapper {
-  padding: 44px 20px 80px;
-  background: url('./../../assets/img/bg-image.png') #000 no-repeat 0 0;
-  background-size: cover;
-
-  .destination__title {
-    margin: 80px 0 40px 0;
-    font: 24px 'Montserrat-Bold';
-    letter-spacing: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-  }
-}
-
 .logo {
   position: absolute;
   top: 44px;
@@ -57,51 +42,6 @@
         border-top: 25px solid #8800ff;
         border-right: 9px solid transparent;
       }
-    }
-  }
-}
-
-.destination {
-  &-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-
-    .destination-item {
-      position: relative;
-    }
-
-    .trip-title {
-      position: absolute;
-      top: calc( 50% - 70px );
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      padding: 5px;
-      width: 142px;
-      border: 4px solid transparent;
-      font: 24px/1em 'Montserrat-Bold';
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      color: #fff;
-
-      &:hover {
-        transform: skew(-20deg);
-        border: 4px solid #8800ff;
-
-        .trip-title__text {
-          transform: skew(20deg);
-        }
-      }
-    }
-
-    .trip-days {
-      display: block;
-      padding: 40px 0;
-      font: 12px 'Montserrat-Bold';
-      text-align: center;
-      color: #fff;
     }
   }
 }

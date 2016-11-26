@@ -1,8 +1,8 @@
-.spaceport-wrapper {
+.spaceport {
   padding: 80px;
   background-color: #2d2b2e;
 
-  .spaceport__title {
+  &__title {
     margin: 80px 0 40px 0;
     font: 24px 'Montserrat-Bold';
     text-align: center;
@@ -10,73 +10,79 @@
     letter-spacing: 5px;
     color: #fff;
   }
-}
 
-.spaceport {
   &-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
 
-    .spaceport-item {
-      position: relative;
-      padding: 30px;
-      width: 312px;
-      height: 328px;
-      border: 4px solid #000;
+      .spaceport-item {
+        position: relative;
+        padding: 30px;
+        width: 312px;
+        height: 328px;
+        border: 4px solid #000;
 
-      &__title, &__date {
-        margin: 0 0 13px 0;
-        font: 24px 'Montserrat-Bold';
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        color: #fff;
-      }
-
-      &__dep {
-        margin-bottom: 55px;
-        font: 12px 'Montserrat-Regular';
-        text-align: center;
-        text-transform: capitalize;
-        color: rgba(255, 255, 255, .3);
-      }
-
-      &__info {
-        font: 12px 'Montserrat-Regular';
-        text-align: center;
-        text-transform: capitalize;
-        color: rgba(255, 255, 255, .3);
-      }
-
-      &.active {
-        background: #fff;
-        border: 4px solid transparent;
-        border-radius: 5px;
-        box-shadow: 0 8px 34px rgba(0, 0, 0, 1);
-
-        .spaceport-item__title,
-        .spaceport-item__date {
-          color: #302b33;
-        }
-
-        .spaceport-item__info {
-          color: #8800ff;
-        }
-
-        .spaceport-item__dep {
-          color: rgba(48, 43, 51, .3);
-        }
-      }
-      &:not(.active):hover {
-        border: 4px solid #8800ff;
-
-        .icon-star {
+        &__title, &__date {
+          margin: 0 0 13px 0;
+          font: 24px 'Montserrat-Bold';
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 5px;
           color: #fff;
+        }
+
+        &__departure {
+          margin-bottom: 55px;
+          font: 12px 'Montserrat-Regular';
+          text-align: center;
+          text-transform: capitalize;
+          color: rgba(255, 255, 255, .3);
+        }
+
+        &-fly-info {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        &__info {
+          margin-bottom: 44px;
+          font: 12px 'Montserrat-Regular';
+          text-align: center;
+          text-transform: capitalize;
+          color: rgba(255, 255, 255, .3);
+        }
+
+        &.is-active {
+          background: #fff;
+          border: 4px solid transparent;
+          border-radius: 5px;
+          box-shadow: 0 8px 34px rgba(0, 0, 0, 1);
+
+          .spaceport-item__title,
+          .spaceport-item__date {
+            color: #302b33;
+          }
+
+          .spaceport-item__info {
+            color: #8800ff;
+          }
+
+          .spaceport-item__departure {
+            color: rgba(48, 43, 51, .3);
+          }
+        }
+        &:not(.active):hover {
+          border: 4px solid #8800ff;
+
+          .icon-star {
+            color: #fff;
+          }
         }
       }
     }
-  }
 }
 
 .icon-star {

@@ -6,15 +6,15 @@ import "./summary.scss";
 @Component({
   selector: "ctSummary",
   template: `
-  <div class="summary-wrapper">
+  <div class="summary">
     <h2 class="summary__title">2. summary</h2>
-    <div class="summary">
+    <div class="summary-wrapper">
       <div class="users-summary">
         <div class="users-info">
           <label class="users-info__label">First name</label>
           <input class="users-info__input" type="text"  pattern="[aA-zZ]*" [(ngModel)]="name" />
           <div class="validation-marker">
-            <span class="icon-close-16"></span>
+            <span class="icon-close"></span>
             <span class="icon-check"></span>
           </div>
         </div>
@@ -23,7 +23,7 @@ import "./summary.scss";
           <label class="users-info__label">Last name</label>
           <input class="users-info__input" type="text"  pattern="[aA-zZ]*" [(ngModel)]="lastname" />
           <div class="validation-marker">
-            <span class="icon-close-16"></span>
+            <span class="icon-close"></span>
             <span class="icon-check"></span>
            </div>
         </div>
@@ -32,7 +32,7 @@ import "./summary.scss";
           <label class="users-info__label">Email</label>
           <input class="users-info__input" type="email" pattern="[^ @]*@[^ @]*" [(ngModel)]="email" />
           <div class="validation-marker">
-            <span class="icon-close-16"></span>
+            <span class="icon-close"></span>
             <span class="icon-check"></span>
            </div>
         </div>
@@ -41,7 +41,7 @@ import "./summary.scss";
           <label class="users-info__label">Phone</label>
           <input class="users-info__input" type="number" pattern="[789][0-9]{9}" [(ngModel)]="phone" />
           <div class="validation-marker">
-            <span class="icon-close-16"></span>
+            <span class="icon-close"></span>
             <span class="icon-check"></span>
            </div>
         </div>
