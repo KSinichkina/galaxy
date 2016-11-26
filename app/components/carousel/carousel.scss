@@ -30,8 +30,8 @@
 
   &-container {
     border: 1px solid;
-    overflow: scroll;
     width: 500%;
+    overflow: scroll;
     transform: translateX(-17%);
     transition: 1s ease-in-out;
   }
@@ -50,8 +50,8 @@
   }
 
   &-image-container {
-    width: 18%;
     display: inline-block;
+    width: 18%;
     float: left;
 
     &__image {

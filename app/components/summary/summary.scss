@@ -1,15 +1,15 @@
 .summary-wrapper {
+  padding: 95px 136px 130px;
   background: url('./../../assets/img/bg-image2.png') #000 no-repeat 0 0;
   background-size: cover;
-  padding: 95px 136px 130px;
 
   .summary__title {
+    margin: 0 0 65px;
     font: 24px 'Montserrat-Regular';
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 65px;
     color: #fff;
   }
 }
@@ -26,15 +26,15 @@
 
     &__label {
       font: 12px/2em 'Montserrat-Regular';
-      color: rgba(255, 255, 255, .6);
       text-transform: uppercase;
+      color: rgba(255, 255, 255, .6);
     }
 
     &__input {
+      width: 100%;
       border: none;
       outline: none;
       background: transparent;
-      width: 100%;
       font: 16px/2.5em 'Montserrat-Regular';
       color: #fff;
 
@@ -102,17 +102,17 @@
   }
 
   .users-ticket {
+    padding: 30px;
     width: 520px;
     height: 368px;
-    background: #fff;
-    padding: 30px;
     border-radius: 5px;
+    background: #fff;
 
     .ticket-header {
       display: flex;
       justify-content: space-between;
-      border-bottom: 4px solid rgba(0, 0, 0,.1);
       padding-bottom: 24px;
+      border-bottom: 4px solid rgba(0, 0, 0,.1);
 
       .logo {
         position: relative;
@@ -132,15 +132,15 @@
     }
 
     .tour-info {
-      border-bottom: 4px solid rgba(0, 0, 0,.1);
       padding-bottom: 24px;
       margin-bottom: 30px;
       overflow: hidden;
+      border-bottom: 4px solid rgba(0, 0, 0,.1);
 
       .planet {
-        text-transform: uppercase;
-        font: 24px/1em 'Montserrat-Regular';
         margin: 23px 0 0;
+        font: 24px/1em 'Montserrat-Regular';
+        text-transform: uppercase;
       }
 
       .cosmodrom {
@@ -170,13 +170,13 @@
 }
 
 .continue__btn {
+  display: block;
+  margin: 0 auto;
   width: 285px;
   height: 72px;
+  border: none;
+  outline: none;
   background-color: #8800ff;
   font: 24px/1em 'Montserrat-Regular';
   color: #fff;
-  border: none;
-  outline: none;
-  margin: 0 auto;
-  display: block;
 }

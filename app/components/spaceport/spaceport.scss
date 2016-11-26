@@ -1,14 +1,14 @@
 .spaceport-wrapper {
-  background-color: #2d2b2e;
   padding: 80px;
+  background-color: #2d2b2e;
 
   .spaceport__title {
-    font: 24px 'Montserrat-Bold';
-    letter-spacing: 5px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
     margin: 80px 0 40px 0;
+    font: 24px 'Montserrat-Bold';
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
   }
 }
 
@@ -20,32 +20,39 @@
 
     .spaceport-item {
       position: relative;
-      border: 4px solid #000;
       padding: 30px;
       width: 312px;
       height: 328px;
+      border: 4px solid #000;
 
       &__title, &__date {
+        margin: 0 0 13px 0;
         font: 24px 'Montserrat-Bold';
-        letter-spacing: 5px;
         text-align: center;
-        color: #fff;
         text-transform: uppercase;
-        margin: 13px 0;
+        letter-spacing: 5px;
+        color: #fff;
       }
 
-      &__dep, &__info {
+      &__dep {
+        margin-bottom: 55px;
         font: 12px 'Montserrat-Regular';
         text-align: center;
-        color: #fff;
-        opacity: 0.3;
         text-transform: capitalize;
+        color: rgba(255, 255, 255, .3);
+      }
+
+      &__info {
+        font: 12px 'Montserrat-Regular';
+        text-align: center;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, .3);
       }
 
       &.active {
         background: #fff;
-        border-radius: 5px;
         border: 4px solid transparent;
+        border-radius: 5px;
         box-shadow: 0 8px 34px rgba(0, 0, 0, 1);
 
         .spaceport-item__title,
@@ -55,11 +62,10 @@
 
         .spaceport-item__info {
           color: #8800ff;
-          opacity: 1;
         }
 
         .spaceport-item__dep {
-          color: #000;
+          color: rgba(48, 43, 51, .3);
         }
       }
       &:not(.active):hover {
@@ -76,6 +82,8 @@
 .icon-star {
   position: relative;
   display: block;
+  margin-bottom: 28px;
   text-align: center;
+  font-size: 22px;
   color: #8800ff;
 }
