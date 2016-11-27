@@ -56,3 +56,14 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+  .destination {
+    padding: 28px;
+
+    &__title {
+      margin: 60px auto;
+      font-size: 14px;
+    }
+  }
+}
+

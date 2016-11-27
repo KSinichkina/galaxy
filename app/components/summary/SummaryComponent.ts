@@ -67,7 +67,7 @@ import "./summary.scss";
           <div class="phone-info">{{ phone }}</div>
         </div>
     </div>
-    <input type="submit" class="continue__btn" value="Continue" />
+    <input type="submit" class="continue__button" value="Continue" />
 </div>
   `
 })

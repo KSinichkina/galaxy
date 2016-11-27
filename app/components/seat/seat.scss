@@ -86,3 +86,17 @@
     transition: 1s ease-in-out;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .seat {
+    padding: 28px;
+
+    &__title {
+      font-size: 14px;
+    }
+  }
+
+  .shuttle {
+    transform: rotate(270deg);
+  }
+}

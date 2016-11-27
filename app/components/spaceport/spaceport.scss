@@ -93,3 +93,13 @@
   font-size: 22px;
   color: #8800ff;
 }
+
+@media screen and (max-width: 420px) {
+  .spaceport {
+    padding: 28px;
+
+    &__title {
+      font-size: 14px;
+    }
+  }
+}

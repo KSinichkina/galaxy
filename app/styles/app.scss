@@ -1,2 +1,6 @@
 @import "vars";
 @import "mixins";
+
+.ct-layout {
+  overflow: hidden;
+}

@@ -59,3 +59,11 @@
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  .carousel {
+    .icon {
+      display: none;
+    }
+  }
+}
