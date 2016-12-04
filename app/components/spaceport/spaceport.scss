@@ -15,74 +15,74 @@
       display: flex;
       justify-content: space-around;
       list-style: none;
+   }
 
-      .spaceport-item {
-        position: relative;
-        padding: 30px;
-        width: 312px;
-        height: 328px;
-        border: 4px solid #000;
+  &-item {
+    position: relative;
+    padding: 30px;
+    width: 312px;
+    height: 328px;
+    border: 4px solid #000;
 
-        &__title, &__date {
-          margin: 0 0 13px 0;
-          font: 24px 'Montserrat-Bold';
-          text-align: center;
-          text-transform: uppercase;
-          letter-spacing: 5px;
-          color: #fff;
-        }
+    &__title, &__date {
+      margin: 0 0 13px 0;
+      font: 24px 'Montserrat-Bold';
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #fff;
+    }
 
-        &__departure {
-          margin-bottom: 55px;
-          font: 12px 'Montserrat-Regular';
-          text-align: center;
-          text-transform: capitalize;
-          color: rgba(255, 255, 255, .3);
-        }
+    &__departure {
+      margin-bottom: 55px;
+      font: 12px 'Montserrat-Regular';
+      text-align: center;
+      text-transform: capitalize;
+      color: rgba(255, 255, 255, .3);
+    }
 
-        &-fly-info {
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        }
+    &-fly-info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
 
-        &__info {
-          margin-bottom: 44px;
-          font: 12px 'Montserrat-Regular';
-          text-align: center;
-          text-transform: capitalize;
-          color: rgba(255, 255, 255, .3);
-        }
+    &__info {
+      margin-bottom: 44px;
+      font: 12px 'Montserrat-Regular';
+      text-align: center;
+      text-transform: capitalize;
+      color: rgba(255, 255, 255, .3);
+    }
 
-        &.is-active {
-          background: #fff;
-          border: 4px solid transparent;
-          border-radius: 5px;
-          box-shadow: 0 8px 34px rgba(0, 0, 0, 1);
+    &.is-active {
+      background: #fff;
+      border: 4px solid transparent;
+      border-radius: 5px;
+      box-shadow: 0 8px 34px rgba(0, 0, 0, 1);
 
-          .spaceport-item__title,
-          .spaceport-item__date {
-            color: #302b33;
-          }
+      .spaceport-item__title,
+      .spaceport-item__date {
+        color: #302b33;
+      }
 
-          .spaceport-item__info {
-            color: #8800ff;
-          }
+      .spaceport-item__info {
+        color: #8800ff;
+      }
 
-          .spaceport-item__departure {
-            color: rgba(48, 43, 51, .3);
-          }
-        }
-        &:not(.active):hover {
-          border: 4px solid #8800ff;
-
-          .icon-star {
-            color: #fff;
-          }
-        }
+      .spaceport-item__departure {
+        color: rgba(48, 43, 51, .3);
       }
     }
+    &:not(.active):hover {
+      border: 4px solid #8800ff;
+
+      .icon-star {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .icon-star {
@@ -96,10 +96,73 @@
 
 @media screen and (max-width: 420px) {
   .spaceport {
-    padding: 28px;
+    padding: 28px 0;
 
     &__title {
       font-size: 14px;
+    }
+
+    &-list {
+      display: block;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    &-item {
+      display: inline-block;
+      margin: 0 12px;
+      padding: 32px;
+      width: 224px;
+      height: 232px;
+      float: none;
+      background: #fff;
+      border: 0;
+      border-radius: 5px;
+      box-shadow: 0 8px 34px rgba(0, 0, 0, 1);
+      vertical-align: middle;
+      white-space: normal;
+
+      &:not(.active):hover {
+        border: 0;
+
+        .icon-star {
+          color: #8800ff;
+        }
+      }
+
+      &.is-active {
+        border: 0;
+      }
+
+      &__title {
+        font: 14px 'Montserrat-Bold';
+        line-height: 1.14;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #302b33;
+      }
+
+      &__departure {
+        color: rgba(48, 43, 51, .3);
+      }
+
+      &__date {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 1px;
+      }
+
+      &__info {
+        margin-bottom: 35px;
+        color: #8800ff;
+      }
+    }
+
+    .icon-star {
+      margin-bottom: 13px;
     }
   }
 }

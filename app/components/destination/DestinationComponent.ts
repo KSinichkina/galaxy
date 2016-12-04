@@ -14,21 +14,21 @@ import "./img/europa.png";
      <div class="destination-wrapper">
         <div class="destination-list">
             <div class="destination-item">
-                <img src="public/assets/venus.png" alt="venus destination"/>
+                <img class="destination-item__image" src="public/assets/venus.png" alt="venus destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">venus</div>
                 </div>
                 <span class="trip-days">580 days</span>
             </div>
             <div class="destination-item">
-                <img src="public/assets/mars.png" alt="mars destination"/>
+                <img class="destination-item__image" src="public/assets/mars.png" alt="mars destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">mars</div>
                 </div>
                 <span class="trip-days">600 days</span>
             </div>
             <div class="destination-item">
-                <img src="public/assets/europa.png" alt="europa destination"/>
+                <img class="destination-item__image" src="public/assets/europa.png" alt="europa destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">europa</div>
                 </div>
