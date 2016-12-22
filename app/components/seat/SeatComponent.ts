@@ -8,25 +8,46 @@ import "./seat.scss";
   <div class="seat">
     <h2 class="seat__title">2. seat</h2>
     <div class="seat-wrapper">
-        <div class="shuttle">
+        <div class="shuttle is-desktop">
           <div class="shuttle-root">
             <div class="shuttle-cabin"></div>
-            <div class="shuttle-seats">
-              <div class="shuttle-seats-block">
-                <ul class="shuttle-seats__list">
-                  <li class="shuttle-seats__item">1</li>
-                  <li class="shuttle-seats__item">2</li>
-                  <li class="shuttle-seats__item is-active">3</li>
-                  <li class="shuttle-seats__item">4</li>
-                  <li class="shuttle-seats__item">5</li>
-                  <li class="shuttle-seats__item">6</li>
-                  <li class="shuttle-seats__item">7</li>
-                  <li class="shuttle-seats__item">8</li>
+            <div class="shuttle-seat">
+              <div class="shuttle-seat-block">
+                <ul class="shuttle-seat__list">
+                  <li class="shuttle-seat__item">1</li>
+                  <li class="shuttle-seat__item">2</li>
+                  <li class="shuttle-seat__item is-active">3</li>
+                  <li class="shuttle-seat__item">4</li>
+                  <li class="shuttle-seat__item">5</li>
+                  <li class="shuttle-seat__item">6</li>
+                  <li class="shuttle-seat__item">7</li>
+                  <li class="shuttle-seat__item">8</li>
                 </ul>
               </div>
               <div class="shuttle-door-up"></div>
               <div class="shuttle-door-down"></div>
             </div>
+          </div>
+        </div>
+        <div class="shuttle is-mobile">
+          <div class="shuttle-root">
+            <div class="shuttle-seat">
+              <div class="shuttle-seat-block">
+                <ul class="shuttle-seat__list">
+                  <li class="shuttle-seat__item">1</li>
+                  <li class="shuttle-seat__item">2</li>
+                  <li class="shuttle-seat__item is-active">3</li>
+                  <li class="shuttle-seat__item">4</li>
+                  <li class="shuttle-seat__item">5</li>
+                  <li class="shuttle-seat__item">6</li>
+                  <li class="shuttle-seat__item">7</li>
+                  <li class="shuttle-seat__item">8</li>
+                </ul>
+              </div>
+              <div class="shuttle-door-up"></div>
+              <div class="shuttle-door-down"></div>
+            </div>
+            <div class="shuttle-cabin"></div>
           </div>
         </div>
     </div>

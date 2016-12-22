@@ -25,7 +25,16 @@
 
 
 .shuttle {
+  position: relative;
   overflow: hidden;
+
+  &.is-desktop {
+    display: block;
+  }
+
+  &.is-mobile {
+    display: none;
+  }
 
   &-cabin {
     width: 30%;
@@ -34,7 +43,7 @@
     background: url('./../../assets/img/body.png') no-repeat right center;
   }
 
-  &-seats {
+  &-seat {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,14 +98,80 @@
 
 @media screen and (max-width: 420px) {
   .seat {
-    padding: 28px;
+    padding: 0;
 
     &__title {
       font-size: 14px;
+      margin-bottom: 20px;
     }
-  }
 
-  .shuttle {
-    transform: rotate(270deg);
+    &-wrapper {
+
+      &:hover {
+        .shuttle-door-down {
+          transform: translate(75px, 0);
+        }
+
+        .shuttle-door-up {
+          transform: translate(-75px, 0);
+        }
+      }
+    }
+
+    .shuttle {
+      overflow: hidden;
+
+      &.is-desktop {
+        display: none;
+      }
+
+      &.is-mobile {
+        display: block;
+      }
+
+      &-cabin {
+        height: 132px;
+        width: 94px;
+        float: none;
+        margin: 0 auto;
+        background: url('./../../assets/img/cabin_mob.png') no-repeat;
+      }
+
+      &-seat {
+        flex-direction: row;
+        margin: auto;
+        float: none;
+        width: auto;
+        height: auto;
+
+        &-block {
+          bottom: 132px;
+          width: 138px;
+        }
+
+        &__list {
+          padding: 0;
+        }
+
+        &__item {
+          display: inline-block;
+          padding: 2px 8px;
+          margin: 8px 12px;
+          border-radius: 5px 5px 15px 15px;
+        }
+      }
+
+      &-door-down {
+        width: 68px;
+        height: 342px;
+        background: url('./../../assets/img/right.png') no-repeat;
+      }
+
+      &-door-up {
+        width: 68px;
+        height: 342px;
+        background: url('./../../assets/img/left.png') no-repeat;
+      }
+    }
   }
 }
