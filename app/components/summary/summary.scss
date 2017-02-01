@@ -160,10 +160,15 @@
         color: #000;
       }
 
+      .name-info {
+        word-wrap: break-word;
+      }
+
       .email-info,
       .phone-info {
         font: 16px/1.5em 'Montserrat-Regular';
         color: rgba(0, 0, 0, 0.3);
+        word-wrap: break-word;
       }
     }
   }

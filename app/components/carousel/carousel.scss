@@ -39,6 +39,7 @@
   &-controls {
     color: #fff;
     font-size: 2.3em;
+    cursor: pointer;
 
     &__left {
       @include carouselControls('to right');

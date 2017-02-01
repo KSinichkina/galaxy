@@ -7,7 +7,7 @@ import "./summary.scss";
   selector: "ctSummary",
   template: `
   <div class="summary">
-    <h2 class="summary__title">2. summary</h2>
+    <h2 class="summary__title">4. summary</h2>
     <div class="summary-wrapper">
       <div class="users-summary">
         <div class="users-info">

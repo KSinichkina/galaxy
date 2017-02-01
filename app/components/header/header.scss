@@ -10,8 +10,9 @@
 
 .nav-menu {
   text-align: center;
+  list-style: none;
 
-  &__item {
+  &__item, &__item:focus {
     position: relative;
     padding: 6px 10px;
     font: 12px/1em 'Montserrat-Regular';
@@ -19,6 +20,7 @@
     letter-spacing: 0.9px;
     text-decoration: none;
     text-transform: uppercase;
+    outline: none;
     color: #fff;
 
     &:hover {
