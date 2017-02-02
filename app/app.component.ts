@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { AUTH_PROVIDERS } from "angular2-jwt";
 
-import "../app/styles/app.scss";
+import "./styles/app.scss";
 
 import RoutComponent from "./components/RoutComponent";
 
