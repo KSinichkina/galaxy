@@ -6,12 +6,12 @@ import "./header.scss";
   selector: "ctHeader",
   template: `
     <header>
-        <nav class="nav-menu">
-            <a class="nav-menu__item" href="#">about</a>
-            <a class="nav-menu__item" href="#">book tour</a>
-            <a class="nav-menu__item" href="#">training</a>
-            <a class="nav-menu__item" href="#">contact</a>
-        </nav>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a class="nav-menu__link" href="#">about</a></li>
+            <li class="nav-menu-item"><a class="nav-menu__link" href="#">book tour</a></li>
+            <li class="nav-menu-item"><a class="nav-menu__link" href="#">training</a></li>
+            <li class="nav-menu-item"><a class="nav-menu__link" href="#">contact</a></li>
+        </ul>
 
         <div class="logo" alt="cosmos tours logo"></div>
     </header>

@@ -9,7 +9,6 @@ import "./img/europa.png";
   selector: "ctDestination",
   template: `
   <div class="destination">
-     <ctHeader></ctHeader>
      <h2 class="destination__title">1. Choose destination</h2>
      <div class="destination-wrapper">
         <div class="destination-list">
@@ -20,7 +19,7 @@ import "./img/europa.png";
                 </div>
                 <span class="trip-days">580 days</span>
             </div>
-            <div class="destination-item">
+            <div class="destination-item is-active">
                 <img class="destination-item__image" src="public/assets/mars.png" alt="mars destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">mars</div>

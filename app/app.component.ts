@@ -14,6 +14,7 @@ import RoutComponent from "./components/RoutComponent";
   ],
   template: `
               <div class="ct-layout">
+                  <ctHeader></ctHeader>
                   <ctDestination></ctDestination>
                   <ctCarousel></ctCarousel>
                   <ctSpaceport></ctSpaceport>

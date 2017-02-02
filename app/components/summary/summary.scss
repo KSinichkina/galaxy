@@ -183,6 +183,11 @@
   background-color: #8800ff;
   font: 24px/1em 'Montserrat-Regular';
   color: #fff;
+
+  &:active {
+    background: #fff;
+    color: #333;
+  }
 }
 
 @media screen and (max-width: 420px) {
