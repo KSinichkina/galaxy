@@ -1,3 +1,8 @@
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .destination {
   padding: 44px 20px 80px;
   margin-top: -111px;
@@ -16,29 +21,6 @@
   &-list {
     display: flex;
     justify-content: space-around;
-
-    .destination-item {
-      position: relative;
-      cursor: pointer;
-
-      &.is-active {
-        //transform: scale(1.2);
-        //opacity: .5;
-        //
-        //.trip-days {
-        //  padding: 15px 0;
-        //}
-      }
-
-      &:not(.is-active) .trip-title:hover {
-        transform: skew(-20deg);
-        border: 4px solid #8800ff;
-
-        .trip-title__text {
-          transform: skew(20deg);
-        }
-      }
-    }
 
     .trip-title {
       position: absolute;
@@ -62,6 +44,35 @@
       font: 12px 'Montserrat-Bold';
       text-align: center;
       color: #fff;
+    }
+  }
+
+  &-item {
+    position: relative;
+    cursor: pointer;
+
+    &.is-active {
+      .rays	{
+        position: absolute;
+        width: 287px;
+        height: 287px;
+        background: url('./../../assets/img/spin.png') center center no-repeat;
+        opacity: .3;
+        border-radius: 50%;
+        animation-name: spin;
+        animation-duration: 40000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    &:not(.is-active) .trip-title:hover {
+      transform: skew(-20deg);
+      border: 4px solid #8800ff;
+
+      .trip-title__text {
+        transform: skew(20deg);
+      }
     }
   }
 }
@@ -97,6 +108,13 @@
       float: none;
       vertical-align: middle;
       white-space: normal;
+
+      &.is-active {
+        .rays	{
+          width: 224px;
+          height: 224px;
+        }
+      }
 
       &__image {
         max-height: 100%;

@@ -13,6 +13,7 @@ import "./img/europa.png";
      <div class="destination-wrapper">
         <div class="destination-list">
             <div class="destination-item">
+                <div class="rays"></div>
                 <img class="destination-item__image" src="public/assets/venus.png" alt="venus destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">venus</div>
@@ -20,6 +21,7 @@ import "./img/europa.png";
                 <span class="trip-days">580 days</span>
             </div>
             <div class="destination-item is-active">
+                <div class="rays"></div>
                 <img class="destination-item__image" src="public/assets/mars.png" alt="mars destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">mars</div>
@@ -27,6 +29,7 @@ import "./img/europa.png";
                 <span class="trip-days">600 days</span>
             </div>
             <div class="destination-item">
+                <div class="rays"></div>
                 <img class="destination-item__image" src="public/assets/europa.png" alt="europa destination"/>
                 <div class="trip-title">
                   <div class="trip-title__text">europa</div>
