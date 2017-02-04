@@ -5,7 +5,7 @@
 
   &__title {
     margin: 0 0 65px;
-    font: 24px 'Montserrat-Regular';
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
@@ -24,7 +24,8 @@
       margin-bottom: 22px;
 
       &__label {
-        font: 12px/2em 'Montserrat-Regular';
+        font-size: 12px;
+        line-height: 2em;
         text-transform: uppercase;
         color: rgba(255, 255, 255, .6);
       }
@@ -34,7 +35,8 @@
         border: none;
         outline: none;
         background: transparent;
-        font: 16px/2.5em 'Montserrat-Regular';
+        font-size: 16px;
+        line-height: 2.5em;
         color: #fff;
 
         &::-webkit-outer-spin-button,
@@ -53,7 +55,7 @@
             position: absolute;
             top: -65px;
             right: 0;
-            font: 12px/1em 'Montserrat-Regular';
+            font-size: 12px;
             color: #e15968;
           }
           & + .validation-marker .icon-check {
@@ -124,7 +126,7 @@
         }
 
         .ticket {
-          font: 24px 'Montserrat-Regular';
+          font-size: 24px;
           color:  #8800ff;
           text-transform: uppercase;
         }
@@ -138,17 +140,19 @@
 
         .planet {
           margin: 23px 0 0;
-          font: 24px/1em 'Montserrat-Regular';
+          font-size: 24px;
           text-transform: uppercase;
         }
 
         .cosmodrom {
-          font: 16px/1.5em 'Montserrat-Regular';
+          font-size: 16px;
+          line-height: 1.5em;
           float: left;
         }
 
         .fly-date {
-          font: 16px/1.5em 'Montserrat-Regular';
+          font-size: 16px;
+          line-height: 1.5em;
           text-align: right;
           color: rgba(0, 0, 0, 0.3);
         }
@@ -156,7 +160,8 @@
 
       .seat-number,
       .name-info .last-name-info {
-        font: 16px/1.5em 'Montserrat-Regular';
+        font-size: 16px;
+        line-height: 1.5em;
         color: #000;
       }
 
@@ -166,7 +171,8 @@
 
       .email-info,
       .phone-info {
-        font: 16px/1.5em 'Montserrat-Regular';
+        font-size: 16px;
+        line-height: 1.5em;
         color: rgba(0, 0, 0, 0.3);
         word-wrap: break-word;
       }
@@ -181,7 +187,7 @@
   border: none;
   outline: none;
   background-color: #8800ff;
-  font: 24px/1em 'Montserrat-Regular';
+  font-size: 24px;
   color: #fff;
 
   &:active {
@@ -190,7 +196,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .summary {
     padding: 28px;
     background: url('./../../assets/img/bg-image_mob_summary.png') #000 no-repeat 0 0;
@@ -208,8 +214,14 @@
         width: auto;
         height: auto;
 
-        .tour-info .fly-date {
-          text-align: left;
+        .tour-info {
+          .fly-date {
+            text-align: left;
+          }
+
+          .cosmodrom {
+            float: none;
+          }
         }
       }
 

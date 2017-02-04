@@ -19,7 +19,7 @@
   &__link, &__link:focus {
     position: relative;
     padding: 6px 10px;
-    font: 12px/1em 'Montserrat-Regular';
+    font-size: 12px;
     line-height: 2;
     letter-spacing: 0.9px;
     text-decoration: none;
@@ -52,15 +52,8 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .logo {
-    top: 28px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-  }
-
-  .nav-menu {
     display: none;
   }
 }

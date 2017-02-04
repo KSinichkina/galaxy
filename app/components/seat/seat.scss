@@ -63,7 +63,8 @@
       margin: 3% 6%;
       border: 4px solid #000;
       border-radius: 15px 5px 5px 15px;
-      font: 24px/1em 'Montserrat-Regular';
+      font-size: 24px;
+      line-height: 1em;
       color: #fff;
       cursor: pointer;
 
@@ -96,7 +97,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .seat {
     padding: 0;
 
@@ -158,7 +159,8 @@
           padding: 3px 10px;
           margin: 8px 12px;
           border-radius: 5px 5px 15px 15px;
-          font: 14px/1.7em 'Montserrat-Regular';
+          font-size: 14px;
+          line-height: 1.7em;
         }
       }
 

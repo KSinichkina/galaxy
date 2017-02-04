@@ -55,12 +55,16 @@ class CarouselComponent {
     rightSliding(event) {
         if (this.slideValue >= -35) {
             this.slideValue = this.slideValue - 18;
+        } else {
+            this.slideValue = -17;
         }
     }
 
     leftSliding(event) {
         if (this.slideValue <= -35) {
             this.slideValue = this.slideValue + 18;
+        } else {
+            this.slideValue = -17;
         }
     }
 }

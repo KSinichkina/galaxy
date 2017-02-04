@@ -22,12 +22,12 @@
       cursor: pointer;
 
       &.is-active {
-        transform: scale(1.2);
-        opacity: .5;
-
-        .trip-days {
-          padding: 15px 0;
-        }
+        //transform: scale(1.2);
+        //opacity: .5;
+        //
+        //.trip-days {
+        //  padding: 15px 0;
+        //}
       }
 
       &:not(.is-active) .trip-title:hover {
@@ -66,7 +66,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .destination {
     padding: 28px 0;
 
