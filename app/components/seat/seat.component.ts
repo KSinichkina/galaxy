@@ -3,7 +3,7 @@ import { Store } from "@ngrx/store";
 import "./seat.scss";
 
 @Component({
-  selector: "ctSeat",
+  selector: "ct-seat",
   template: `
   <div class="seat">
     <h2 class="seat__title">3. seat</h2>

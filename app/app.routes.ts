@@ -1,9 +1,9 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
 
-import RoutComponent from "./components/RoutComponent";
-import HeaderComponent from "./components/header/HeaderComponent";
-import FooterComponent from "./components/footer/FooterComponent";
+import RoutComponent from "./components/rout.component";
+import HeaderComponent from "./components/header/header.component";
+import FooterComponent from "./components/footer/footer.component";
 
 const routes: Routes = [
   { path: "", component: RoutComponent},

@@ -4,7 +4,7 @@ import { Store } from "@ngrx/store";
 import "./summary.scss";
 
 @Component({
-  selector: "ctSummary",
+  selector: "ct-summary",
   template: `
   <div class="summary">
     <h2 class="summary__title">4. summary</h2>

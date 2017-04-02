@@ -6,7 +6,7 @@ import "./img/venus.png";
 import "./img/europa.png";
 
 @Component({
-  selector: "ctDestination",
+  selector: "ct-destination",
   template: `
   <div class="destination">
      <h2 class="destination__title">1. Choose destination</h2>

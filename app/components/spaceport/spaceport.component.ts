@@ -3,7 +3,7 @@ import { Store } from "@ngrx/store";
 import "./spaceport.scss";
 
 @Component({
-  selector: "ctSpaceport",
+  selector: "ct-spaceport",
   template: `
   <div class="spaceport">
     <h2 class="spaceport__title">2. spaceport</h2>

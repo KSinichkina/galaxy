@@ -8,18 +8,18 @@ import { ROUTER_MODULE } from "./app.routes";
 import { RouterModule } from '@angular/router';
 import { HttpModule } from "@angular/http";
 import { AUTH_PROVIDERS, JwtHelper } from "angular2-jwt";
-import {APP_BASE_HREF} from '@angular/common';
+import { APP_BASE_HREF } from '@angular/common';
 
-import DestinationComponent from "./components/destination/DestinationComponent";
-import RoutComponent from "./components/RoutComponent";
-import HeaderComponent from "./components/header/HeaderComponent";
-import CarouselComponent from "./components/carousel/CarouselComponent";
-import SpaceportComponent from "./components/spaceport/SpaceportComponent";
-import SeatComponent from "./components/seat/SeatComponent";
-import SummaryComponent from "./components/summary/SummaryComponent";
-import FooterComponent from "./components/footer/FooterComponent";
+import DestinationComponent from "./components/destination/destination.component";
+import RoutComponent from "./components/rout.component";
+import HeaderComponent from "./components/header/header.component";
+import CarouselComponent from "./components/carousel/carousel.component";
+import SpaceportComponent from "./components/spaceport/spaceport.component";
+import SeatComponent from "./components/seat/seat.component";
+import SummaryComponent from "./components/summary/summary.component";
+import FooterComponent from "./components/footer/footer.component";
 
-import { root } from "./reducers/RootReducer";
+import { root } from "./reducers/root.reducer";
 
 
 

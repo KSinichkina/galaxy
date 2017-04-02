@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "ctRout",
+    selector: "ct-rout",
     template: `
               <div>
               </div>

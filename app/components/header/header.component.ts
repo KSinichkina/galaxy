@@ -3,7 +3,7 @@ import { Store } from "@ngrx/store";
 import "./header.scss";
 
 @Component({
-  selector: "ctHeader",
+  selector: "ct-header",
   template: `
     <header>
         <ul class="nav-menu">
